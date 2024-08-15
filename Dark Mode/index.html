@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--==================== CSS ==========-->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <title>Implementing Dark Theme</title>
+  </head>
+  <body>
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="#" id="mode-text">Light Mode</a>
+
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list grid">
+            <li class="nav__item">
+              <a href="#introduction" class="nav__link"> Introduction </a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#feature-one" class="nav__link"> Feature 1 </a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#feature-two" class="nav__link"> Feature 2 </a>
+            </li>
+          </ul>
+        </div>
+        <!--==================== Dark Mode Toggle Button ====================-->
+        <div>
+          <input type="checkbox" class="checkbox" id="toggleBtn" />
+          <label class="switch" for="toggleBtn">
+            <i class="fas fa-moon"></i>
+            <i class="fas fa-sun"></i>
+            <div class="ball"></div>
+          </label>
+        </div>
+        <!--==================== End====================-->
+      </nav>
+    </header>
+    <main class="main">
+      <section class="section" id="introduction">
+        <h2 class="section__title">Introduction</h2>
+        <span class="section__subtitle">Subtitle</span>
+
+        <div class="container grid">
+          <!-- <img src="assets/img/about.jpg" alt="" class="about__img" /> -->
+
+          <div>
+            <p>
+              This webpage is for the demo purpose of how we can easily
+              implement dark mode to impress users.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="section" id="feature-one">
+        <h2 class="section__title">Feature 1</h2>
+        <span class="section__subtitle">Feature 1</span>
+
+        <div class="container grid">
+          <div>
+            <p>
+              When the dark theme is activated, not only background color is
+              changed, but also the text and hover color. Simply create a dark
+              theme class for body tag.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="section" id="feature-two">
+        <h2 class="section__title">Feature 1</h2>
+        <span class="section__subtitle">Feature 2</span>
+
+        <div class="container grid">
+          <div>
+            <p>
+              We can store the user's theme preference in local storage for the
+              next visit. Try activating the dark theme and refresh this page.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__bg">
+        <div class="footer__container container grid">
+          <div>
+            <h1 class="footer__title">Footer</h1>
+            <span class="footer__subtitle">Subtitle</span>
+          </div>
+
+          <ul class="footer__links">
+            <li>
+              <a href="#" class="footer__link">Item 1</a>
+            </li>
+            <li>
+              <a href="#" class="footer__link">Item 2</a>
+            </li>
+            <li>
+              <a href="#" class="footer__link">Item 3</a>
+            </li>
+          </ul>
+        </div>
+
+        <p class="footer__copy">Demo purpose</p>
+      </div>
+    </footer>
+    <!--==================== MAIN JS ====================-->
+    <script src="script.js"></script>
+  </body>
+</html>
